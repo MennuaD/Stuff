@@ -4,14 +4,27 @@ public class ArrayAlgorithmTester
 {
     public static void main(String[] args)
     {
-        int[] nums = {5, -10, 8, 12, 2, -6, 0};
-        System.out.println(ArrayAlgorithms.customToString(nums));
-        int[] nums2 = {15};
-        System.out.println(ArrayAlgorithms.customToString(nums2));
+        String[] strings = {"hello", "hola", "hi", "apple", "why?"};
+        System.out.println(ArrayAlgorithms.longestString(strings));
+
+        // original array NOT modified
+        System.out.println(Arrays.toString(strings));
 
         System.out.println("----");
-        // original numbers lists NOT modified
-        System.out.println(Arrays.toString(nums));
-        System.out.println(Arrays.toString(nums2));
+
+        String[] strings2 = {"cut", "boy", "mom", "she"};
+        System.out.println(ArrayAlgorithms.longestString(strings2));
+
+        // original array NOT modified
+        System.out.println(Arrays.toString(strings2));
+
+        System.out.println("----");
+
+        String[] strings3 = {"M", "DA", "B", "FAD"};
+        System.out.println(ArrayAlgorithms.longestString(strings3));
+
+        // original array NOT modified
+        System.out.println(Arrays.toString(strings3));
+        System.out.print("hi".toUpperCase());
     }
 }

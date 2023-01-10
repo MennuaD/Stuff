@@ -165,6 +165,22 @@ public class ArrayAlgorithms {
         }
         return strList;
     }
+    /** Returns the length of the longest String(s) in an array of Strings.
+     *  Does NOT mutate (modify) stringList.
+     *  PRECONDITION: stringList.length > 0
+     *
+     *  @param stringList  original array of Strings; does not get modified
+     *  @return  length of the longest String in the array
+     */
+    public static int longestString(String[] stringList) {
+        int sub = 0;
+        for (String str : stringList) {
+            if (str.length() > sub) {
+                sub = str.length();
+            }
+        }
+        return sub;
+    }
 
 
 
