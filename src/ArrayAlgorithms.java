@@ -181,6 +181,20 @@ public class ArrayAlgorithms {
         }
         return sub;
     }
+    /** Changes all words in an array of words to uppercase.
+     *  DOES mutate (modify) original wordList.
+     *  PRECONDITION: wordList.length > 0
+     *
+     *  @param wordList  original array of Strings, modified by method
+     */
+    public static void makeUppercase(String[] wordList)
+    { for(int i = 0; i <= wordList.length - 1; i++){
+        wordList[i] = wordList[i].toUpperCase();
+
+
+    }
+    }
+
 
 
 
