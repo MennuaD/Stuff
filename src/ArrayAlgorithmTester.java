@@ -4,11 +4,11 @@ public class ArrayAlgorithmTester
 {
     public static void main(String[] args)
     {
-        String[] words = {"hello", "hola", "hi", "what's up?"};
-        ArrayAlgorithms.makeUppercase(words);
+        int[] nums = {5, 1, 3, 4, 7};
+        int[] shiftedLeftArr = ArrayAlgorithms.shiftLeft(nums);
+        System.out.println(Arrays.toString(shiftedLeftArr));
 
-        // original word list IS modified
-        System.out.println(Arrays.toString(words));
+        // original array NOT modified
+        System.out.println(Arrays.toString(nums));
     }
 }
-
